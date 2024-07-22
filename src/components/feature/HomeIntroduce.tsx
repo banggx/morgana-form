@@ -10,22 +10,22 @@ export default function HomeIntroduce() {
     {
       img: 'http://sgjihpx4q.hn-bkt.clouddn.com/edit.png',
       darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/dark-edit.png',
-      text: '简介的表单编辑器面板，通过拖拽的方式快速搭建问卷表单，并可视化展示问卷结果。'
+      text: '简洁的表单编辑器面板，通过拖拽的方式快速搭建问卷表单，并可视化展示问卷结果。'
     },
     {
       img: 'http://sgjihpx4q.hn-bkt.clouddn.com/flow.png',
       darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/dark-flow.png',
-      text: '流程图的问卷设计器，通过拖拽的方式快速设计问卷流程，控制表单动态显示逻辑。'
+      text: '流程图设计器，通过拖拽的方式快速设计问卷响应式流程，控制表单动态显示逻辑。'
     },
     {
       img: 'http://sgjihpx4q.hn-bkt.clouddn.com/statistic.png',
       darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/dark-statistic.png',
-      text: '搜集用户提交表单数据，通过可视化展示问卷结果，直观呈现问卷数据。'
+      text: '搜集用户提交表单数据，通过可视化形式展示问卷结果，直观呈现问卷数据。'
     },
     {
       img: 'http://sgjihpx4q.hn-bkt.clouddn.com/ai.png',
       darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/ai-dark.png',
-      text: '智能AI，帮助您快速生成问卷，提升问卷效率，提升问卷质量。',
+      text: '智能AI，帮助你快速生成问卷，提升问卷效率，提升问卷质量。',
     }
   ])
   const [swiperImgs] = useState(Array.prototype.flat.call(swiperIntroduce.map(item => [item.img, item.darkImg]), 2) as string[])
