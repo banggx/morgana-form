@@ -7,7 +7,7 @@ export default async function StatisticLayout({ children }: { children: React.Re
     redirect('/api/auth/signin')
   }
   
-  return (<div className='w-full h-screen bg-slate-100'>
+  return (<div className='w-full min-w-[1200px] h-screen bg-slate-100'>
     { children }
   </div>)
 }

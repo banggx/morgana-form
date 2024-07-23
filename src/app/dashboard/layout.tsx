@@ -10,7 +10,7 @@ export default async function DashboardLayout({ children }: {children: React.Rea
     redirect('/api/auth/signin')
   }
   
-  return (<>
+  return (<div className='w-full min-w-[1200px]'>
     <nav className="h-[80px] flex justify-between items-center border-b border-gray-100 shadow-sm sticky top-0 bg-white z-50 px-8 text-gray-600 dark:bg-gray-950 dark:border-gray-800">
       <Link href="/">
         <div className="logo flex items-center text-xl font-bold text-slate-600 dark:text-slate-200">
@@ -25,5 +25,5 @@ export default async function DashboardLayout({ children }: {children: React.Rea
     <main className="w-full h-[calc(100%-80px)] p-8">
       { children }
     </main>
-  </>)
+  </div>)
 }

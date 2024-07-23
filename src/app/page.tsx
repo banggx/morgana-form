@@ -21,7 +21,7 @@ export default function Home() {
   })
 
   return (
-    <main className="flex w-full min-h-screen flex-col items-center justify-between relative">
+    <main className="flex w-full min-w-[1200px] min-h-screen flex-col items-center justify-between relative">
       <header className={headerClsx} style={{ background: theme === 'light' ? `rgba(255, 255, 255, ${opacity})` : `rgba(0, 0, 0, ${opacity})` }}>
         <nav className="container flex items-center gap-12 px-12">
           <Button type='text'>

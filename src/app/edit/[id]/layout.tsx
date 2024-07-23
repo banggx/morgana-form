@@ -7,7 +7,7 @@ export default async function EditLayout({ children }: { children: React.ReactNo
     redirect('/api/auth/signin')
   }
   
-  return (<div className='w-full h-screen overflow-hidden bg-slate-100'>
+  return (<div className='w-full min-w-[1200px] h-screen overflow-hidden bg-slate-100'>
     { children }
   </div>)
 }
