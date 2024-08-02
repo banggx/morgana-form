@@ -17,7 +17,7 @@ export function ProjectCard(props: { project: Project, updateProject: (id: strin
       isStar: !project.isStar
     }).then(() => {
       updateProject(project.id, { isStar: !project.isStar})
-      message.success('星标成功')
+      message.success(!project.isStar ? '星标成功' : '取消星标成功')
     })
   }
 

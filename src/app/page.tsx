@@ -41,13 +41,13 @@ export default function Home() {
       <section className="container w-full h-[calc(100vh-100px)] flex relative">
         <div className="w-full h-full py-24 px-12 z-10">
           <div className="flex items-center logo-name text-lg text-current font-medium">
-            <img className="w-6 h-6 mr-2" src='http://sgjihpx4q.hn-bkt.clouddn.com/logo.svg' alt='' />
+            <img className="w-6 h-6 mr-2" src='https://media.mxchensir.com/morgana-form/logo.svg' alt='' />
             MORGana 问卷星
           </div>
           <div className="mt-12 text-8xl font-bold leading-snug">Quickly Build Questionnaire Form</div>
           <div className="mt-16 text-lg text-gray-600">作者微信(wechat) banggx</div>
         </div>
-        <img className="absolute block right-0 bottom-0 h-[80vh]" src="http://sgjihpx4q.hn-bkt.clouddn.com/home-decorator.png" alt='' />
+        <img className="absolute block right-0 bottom-0 h-[80vh]" src="https://media.mxchensir.com/morgana-form/home-decorator.png" alt='' />
       </section>
       <section className="w-full h-screen bg-slate-700">
         <div className="container h-full flex flex-col items-center justify-center py-[100px]">
@@ -98,7 +98,7 @@ export default function Home() {
               本项目为开源项目，部署内容仅用于参考，数据随时可能丢失。<br />
               如果对项目感兴趣，可扫描下方二维码添加作者微信，备注【morgana-form】。
             </div>
-            <img className="mt-2 w-24 h-24" src="http://sgjihpx4q.hn-bkt.clouddn.com/wechat-qrcode.png" />
+            <img className="mt-2 w-24 h-24" src="https://media.mxchensir.com/morgana-form/wechat-qrcode.png" />
           </div>
         </div>
       </section>

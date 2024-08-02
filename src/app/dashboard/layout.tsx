@@ -14,7 +14,7 @@ export default async function DashboardLayout({ children }: {children: React.Rea
     <nav className="h-[80px] flex justify-between items-center border-b border-gray-100 shadow-sm sticky top-0 bg-white z-50 px-8 text-gray-600 dark:bg-gray-950 dark:border-gray-800">
       <Link href="/">
         <div className="logo flex items-center text-xl font-bold text-slate-600 dark:text-slate-200">
-          <img className="w-8 h-8 mr-2" src='http://sgjihpx4q.hn-bkt.clouddn.com/logo.svg' alt='' />
+          <img className="w-8 h-8 mr-2" src='https://media.mxchensir.com/morgana-form/logo.svg' alt='' />
           MORGana 问卷星
         </div>
       </Link>

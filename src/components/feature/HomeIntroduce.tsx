@@ -8,23 +8,23 @@ export default function HomeIntroduce() {
   const [activeIndex, setActiveIndex] = useState(0) 
   const [swiperIntroduce] = useState([
     {
-      img: 'http://sgjihpx4q.hn-bkt.clouddn.com/edit.png',
-      darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/dark-edit.png',
+      img: 'https://media.mxchensir.com/morgana-form/edit.png',
+      darkImg: 'https://media.mxchensir.com/morgana-form/dark-edit.png',
       text: '简洁的表单编辑器面板，通过拖拽的方式快速搭建问卷表单，并可视化展示问卷结果。'
     },
     {
-      img: 'http://sgjihpx4q.hn-bkt.clouddn.com/flow.png',
-      darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/dark-flow.png',
+      img: 'https://media.mxchensir.com/morgana-form/flow.png',
+      darkImg: 'https://media.mxchensir.com/morgana-form/dark-flow.png',
       text: '流程图设计器，通过拖拽的方式快速设计问卷响应式流程，控制表单动态显示逻辑。'
     },
     {
-      img: 'http://sgjihpx4q.hn-bkt.clouddn.com/statistic.png',
-      darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/dark-statistic.png',
+      img: 'https://media.mxchensir.com/morgana-form/statistic.png',
+      darkImg: 'https://media.mxchensir.com/morgana-form/dark-statistic.png',
       text: '搜集用户提交表单数据，通过可视化形式展示问卷结果，直观呈现问卷数据。'
     },
     {
-      img: 'http://sgjihpx4q.hn-bkt.clouddn.com/ai.png',
-      darkImg: 'http://sgjihpx4q.hn-bkt.clouddn.com/ai-dark.png',
+      img: 'https://media.mxchensir.com/morgana-form/ai.png',
+      darkImg: 'https://media.mxchensir.com/morgana-form/ai-dark.png',
       text: '智能AI，帮助你快速生成问卷，提升问卷效率，提升问卷质量。',
     }
   ])

@@ -20,7 +20,7 @@ export default function PrviewForm(props: PrviewFormProps) {
     onCancel={onClose}
   >
     <div className='w-full h-[747px] relative'>
-      <img className='absolute inset-0' src="http://sgjihpx4q.hn-bkt.clouddn.com/ios2.png" />
+      <img className='absolute inset-0' src="https://media.mxchensir.com/morgana-form/ios2.png" />
       <div className='absolute bg-white top-[58px] left-[26px] right-[26px] bottom-[24px] z-10 rounded-b-3xl overflow-hidden'>
         <iframe className='w-full h-full overflow-auto' src={`/pages/${id}?preview=true`}></iframe>
       </div>

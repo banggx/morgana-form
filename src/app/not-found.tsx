@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="stars">
       <div className="custom-navbar">
         <div className="brand-logo">
-          <img src="http://sgjihpx4q.hn-bkt.clouddn.com/logo.svg" width="32px" />
+          <img src="https://media.mxchensir.com/morgana-form/logo.svg" width="32px" />
           MORGana FORM
         </div>
         <div className="navbar-links">

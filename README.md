@@ -1,5 +1,5 @@
 <div align=center>
-  <img src="http://sgjihpx4q.hn-bkt.clouddn.com/logo-name.png" height=240px />
+  <img src="https://media.mxchensir.com/morgana-form/logo-name.png" height=240px />
 </div>
 
 # MorGana 问卷星
