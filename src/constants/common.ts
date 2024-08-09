@@ -1,0 +1,1 @@
+export const EmptyIcon = 'https://media.mxchensir.com/morgana-form/emptyState.svg';
