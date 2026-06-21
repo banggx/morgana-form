@@ -15,6 +15,7 @@ export interface Project {
   status?: ProjectStatus,
   schema?: string;
   config?: string;
+  archived?: boolean;
 }
 
 export interface ProjectConfig {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Card, Tooltip, Pagination, Spin, Empty, Modal, message } from 'antd'
+import { Button, Card, Tooltip, Pagination, Spin, Empty, Modal, message, Tag } from 'antd'
 import { trpcClientReact } from '@/utils/apis'
 import { Project } from '@/typings/project'
 import { Cog, AreaChart, Trash, Star, Cloud, Info } from 'lucide-react'
@@ -66,17 +66,23 @@ export function ProjectCard(props: { project: Project, updateProject: (id: strin
           <Cloud size={16} />
         </div>
       }
+      {
+        project.archived && <Tag color='default' className='ml-1'>已归档</Tag>
+      }
     </div>
   </Card>)
 }
 
-export default function ProjectList(props: { filters?: Partial<Project> } ) {
+export default function ProjectList(props: { filters?: Partial<Project>, archivedFilter?: boolean | null } ) {
   const pageLimit = 12
   const [page, setPage] = useState(1)
   const listQuery = {
     limit: pageLimit,
     page: page,
-    filter: props.filters
+    filter: {
+      ...props.filters,
+      ...(props.archivedFilter !== undefined ? { archived: props.archivedFilter } : {})
+    }
   }
   const { data, isPending, refetch } = trpcClientReact.project.listProjects.useQuery(listQuery, {
     refetchOnMount: true,

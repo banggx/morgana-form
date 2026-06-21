@@ -82,6 +82,7 @@ export const projects = pgTable('project', {
   isPublish: boolean('is_publish').default(false),
   userId: text("user_id").notNull(),
   status: integer('status').notNull().default(0), // 项目状态: 0-未发布, 1-已发布, 2-已下架
+  archived: boolean('archived').default(false), // 归档状态
   createdAt: timestamp("created_at", { mode: "date" }).defaultNow(),
   updatedAt: timestamp("updated_at", { mode: "date" }).defaultNow(),
   deletedAt: timestamp("deleted_at", { mode: "date" }),
