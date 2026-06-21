@@ -271,5 +271,47 @@ export const projectRouter = router({
 
       await db.delete(projects)
         .where(inArray(projects.id, input))
+    }),
+  
+  archiveProjects: protectedProcedure
+    .input(z.array(z.string()))
+    .mutation(async ({ input, ctx }) => {
+      const projectsResult = await db.query.projects.findMany({
+        where: (project, { inArray, and, eq }) => and(inArray(project.id, input), eq(project.userId, ctx.session.user.id))
+      });
+
+      if (projectsResult.length !== input.length) {
+        return new TRPCError({
+          code: 'FORBIDDEN'
+        })
+      }
+
+      await db.update(projects)
+        .set({
+          archived: true,
+          updatedAt: new Date()
+        })
+        .where(inArray(projects.id, input));
+    }),
+
+  restoreProjects: protectedProcedure
+    .input(z.array(z.string()))
+    .mutation(async ({ input, ctx }) => {
+      const projectsResult = await db.query.projects.findMany({
+        where: (project, { inArray, and, eq }) => and(inArray(project.id, input), eq(project.userId, ctx.session.user.id))
+      });
+
+      if (projectsResult.length !== input.length) {
+        return new TRPCError({
+          code: 'FORBIDDEN'
+        })
+      }
+
+      await db.update(projects)
+        .set({
+          archived: false,
+          updatedAt: new Date()
+        })
+        .where(inArray(projects.id, input));
     })
 })

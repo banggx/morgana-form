@@ -18,3 +18,7 @@ export const trpcPureClient = createTRPCClient<AppRouter>({
     })
   ]
 })
+
+// Add archiveProjects and restoreProjects mutation hooks
+export const useArchiveProjects = trpcClientReact.project.archiveProjects.useMutation
+export const useRestoreProjects = trpcClientReact.project.restoreProjects.useMutation
