@@ -27,6 +27,9 @@ export default function DashboardListPage() {
         <Tabs.TabPane tab="星标问卷" key="star-forms" tabKey='star-forms'>
           <ProjectList filters={{ isStar: true }} />
         </Tabs.TabPane>
+        <Tabs.TabPane tab="已归档" key="archived-forms" tabKey='archived-forms'>
+          <ProjectList archivedFilter={true} />
+        </Tabs.TabPane>
         <Tabs.TabPane tab="回收站" key="trash-forms" tabKey='trash-forms'>
           <TrashTable />
         </Tabs.TabPane>
